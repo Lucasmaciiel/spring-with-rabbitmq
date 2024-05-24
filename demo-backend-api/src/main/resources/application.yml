@@ -2,3 +2,11 @@ spring:
   application.name: demo-backend-api
 server:
   port: 8080
+
+rabbitmq:
+  request:
+    exchange:
+      value: "pagamento-request-exchange"
+
+    rout-key:
+      value: "pagamento-request-rout-key"
